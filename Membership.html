@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta type="viewport" content="width-device-width, initial-scale=1.0">
+		<script src="jquery-3.2.1.min.js"></script>
+		<style type="text/css">
+			
+			header {
+				    display: inline;
+				    height: 50px;
+				    width: : 100%;
+				    color: ;
+			}
+
+			body {
+				  background-color: ;
+				  color: black;
+			}
+
+			h1{
+				color: black;
+			}
+
+			.container {
+						text-align: center;
+						background-color: goldenrod;
+			}
+
+			.container2 {
+						 text-align: center;
+						 height: 600px;
+						 margin-top: 50px;
+						 display: inline;
+			}
+
+			input {
+					margin-top: 10px;
+
+			}
+
+			h2 {
+				color: blue;
+			}
+
+			hr {
+				color: gold;
+				height: 1px;
+			}
+		
+	</style>
+	</head>
+
+<body>
+<header>
+<h1> Company Name</h1>
+</header>
+	
+
+<div class="container">
+	
+	<hr>
+	<p>Sign Up Form</p>
+	
+	<hr>
+	</div>
+
+	<div class="container2">
+	<br>
+	<form>
+	<label>First Name:</label>
+	<input type="text" placeholder="e.g. 'Bob'">
+	<br>
+	<label>Last Name:</label>
+	<input type="text" placeholder="e.g. 'Smith'">
+	<br>
+    <label>Company:</label>
+    <input type="text" placeholder="e.g. 'Ace Gardening'">
+    <br>
+    <label>Position:</label>
+    <input type="text" placeholder="e.g. 'Landscaper'">
+    <br>
+    <label>Phone:</label>
+    <input type="text" placeholder="e.g. '123-456-789">
+    <br>
+    <label>Street Address:</label>
+    <input type="text" placeholder="e.g. '123 Main St.'">
+    <br>
+    <label>City:</label>
+    <input type="text" placeholder="e.g. 'Chicago'">
+    <br>
+    <label>State:</label>
+    <select>
+    	<option>AL-Alabama</option>
+    	<option>AK-Alaska</option>
+    	<option>AZ-Arizona</option>
+    	<option>CA-California</option>
+    	<option>CO-Colorado</option>
+    	<option>CT-Connecticut</option>
+    	<option>DE-Delaware</option>
+    	<option>FL-Florida</option>
+    	<option>GA-Georgia</option>
+    	<option>HI-Hawaii</option>
+    	<option>ID-Idaho</option>
+    	<option>IL-Illinois</option>
+    	<option>IN-Indiana</option>
+    	<option>IA-Iowa</option>
+    	<option>KS-Kansas</option>
+    	<option>KY-Kentucky</option>
+    	<option>LA-Louisiana</option>
+    	<option>ME-Maine</option>
+    	<option>MD-Maryland</option>
+    	<option>MA-Massachusetts</option>
+    	<option>MI-Michigan</option>
+    	<option>MN-Minnesota</option>
+    	<option>MS-Mississippi</option>
+    	<option>MO-Missouri</option>
+    	<option>MT-Montana</option>
+    	<option>NE-Nebraska</option>
+    	<option>NV-Nevada</option>
+    	<option>NH-New Hampshire</option>
+    	<option>NJ-New Jersey</option>
+    	<option>NM-New Mexico</option>
+    	<option>NY-New York</option>
+    	<option>NC- North Carolina</option>
+    	<option>ND-North Dakota</option>
+    	<option>OH-Ohio</option>
+    	<option>OK-Oklahoma</option>
+    	<option>OR-Oregon</option>
+    	<option>PA-Pennsylvania</option>
+    	<option>RI-Rhode Island</option>
+    	<option>SC-South Carolina</option>
+    	<option>SD-South Dakota</option>
+    	<option>TN-Tennessee</option>
+    	<option>TX-Texas</option>
+    	<option>UT-Utah</option>
+    	<option>VT-Vermont</option>
+    	<option>VA-Virginia</option>
+    	<option>WA-Washington</option>
+    	<option>WV-West Virginia</option>
+    	<option>WI-Wisconsin</option>
+    	<option>Wyoming</option>
+    	<option>GU-Guam</option>
+    	<option>PR-Puerto Rico</option>
+    	<option>VI-Virgin Islands</option>
+    </select>
+    <br>
+    <h5>Choose from one of our packages below</h5>
+    <label>Gold</label>
+    <input type="radio">
+    <br>
+    <label>Silver</label>
+    <input type="radio">
+    <br>
+    <label>Platinum</label>
+    <input type="radio">
+    <br>
+    <br>
+    <button id="formSubmit">Go!</button>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$("#formSubmit").click(function(){
+			alert("Form Submit Tested Sucessfully!");
+		});
+		});
+	</script>
+
+	</form>
+
+
+
+</div>
+</body>
+</html>

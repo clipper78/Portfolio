@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<title></title>
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Monoton'>
+<link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Barrio'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+	  background-color: #8DD9CC;
+
+	  
+}
+
+.container {
+			float: left;
+			margin-top: 30px;
+			margin-right: ;
+			height: 600px;
+			width: 300px;
+			background-color: ;
+			color: white;
+			text-align: center;
+			border-radius: 10px;
+			display:;
+			position: ;
+}
+
+#signUp {
+		 float: right;
+		 margin-top: 610px;
+		 margin-right: 20px;
+		 text-align: center;
+
+}
+
+.fa {
+    padding: 10px;
+    font-size: 40px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style:  solid;
+    border-color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    float: right;
+    margin-top: 0px;
+    margin-right: 40px;
+
+}
+
+
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+} 
+
+/* Google */
+.fa-google {
+	background-color: #dd4b39;
+	color: white;
+}			
+
+
+
+li {
+	display: inline;
+	text-align: center;
+	height: 100px;
+	width: 300px;
+	font-size: 72px;
+	font-family: 'Barrio';
+	background-color: transparent;
+	color: red;
+	text-shadow: 2px 2px black;
+	margin-right: 20px;
+}
+
+h3 {
+	font-family: 'Barrio';
+	color: white;
+	text-shadow: 5px 5px black;
+	text-decoration: ;
+	font-size: 60px;
+	margin-top: 300px;
+}
+
+#submit {
+		 background-color: red;
+		 border-radius: 5px;
+		 height: 30px;
+		 width: 100px;
+		 margin-top: 30px;
+}
+
+input {
+		margin-bottom: 10px;
+
+		text-shadow: 1px 1px white;
+		border-color:  #8DD9CC;
+		background-color: white;
+}
+#info {
+	float: ;
+	margin-top: 400px;
+	margin-bottom: ;
+	margin: 30px auto;
+	height: 600px;
+	width: 900px;
+	background-color:;
+	border-radius: 10px;
+	text-align: center;
+	position: ;
+}
+
+
+small {
+	font-size: 22px;
+	display: inline;
+	margin-top: 10px;
+}
+
+
+a {
+	text-decoration: none;
+	text-shadow: 1px 1px red;
+	font-family: 'Times';
+	font-size: 24px;
+	color: black;
+}
+p {
+	font-family: 'Times';
+	text-shadow: 1px 1px white;
+	font-size: 28px;
+
+
+}
+
+#mailingList {
+				width: 100%;
+				height: 200px;
+				background-color: ;
+				border-radius: 10px;
+				text-align: center;
+				font-family: 'Barrio';
+
+}
+
+email {
+		width: 250px; 
+
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+	
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-google"></a>
+
+
+	
+	
+	
+<div id="info">
+<h3>OOPS...Page under Construction!</h3>
+<p>We're upgrading our website to make necessary improvements and upgrades.</p>
+<p>Please check back later.</p>
+
+
+
+
+ <!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 1, 2018 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+<div id="mailingList">
+	<h5>join my mailing list</h5>
+	 <input type="email" placeholder="e.g. 'john@example.com'" id="email">
+	 <input type="submit">
+</div>
+</div>
+
+
+
+
+</body>
+</html>
